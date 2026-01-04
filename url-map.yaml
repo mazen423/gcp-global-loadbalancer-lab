@@ -1,0 +1,34 @@
+creationTimestamp: '2026-01-03T16:06:20.228-08:00'
+defaultService: https://www.googleapis.com/compute/v1/projects/gcp-mastery-1111/global/backendServices/honeypot-backend-service
+fingerprint: WLBWofeaLng=
+id: 5915879628655038484
+kind: compute#urlMap
+name: myshop
+selfLink: https://www.googleapis.com/compute/v1/projects/gcp-mastery-1111/global/urlMaps/myshop
+hostRules:
+- hosts:
+  - myshop.com
+  pathMatcher: myshop-matcher
+
+pathMatchers:
+- defaultService:  https://www.googleapis.com/compute/v1/projects/gcp-mastery-1111/global/backendServices/honeypot-backend-service
+  name : myshop-matcher
+  pathRules:
+  - paths:
+    - '/'
+    - /home
+    service: https://www.googleapis.com/compute/v1/projects/gcp-mastery-1111/global/backendServices/frontend-backend-service
+  - paths:
+    - /assets
+    - /assets/*
+    service: https://www.googleapis.com/compute/v1/projects/gcp-mastery-1111/global/backendBuckets/assets-backend-bucket
+  - paths:
+    - /checkout
+    - /checkout/*
+    service: https://www.googleapis.com/compute/v1/projects/gcp-mastery-1111/global/backendServices/checkout-backend-service
+  - paths:
+    - /account
+    - /account/*
+    service: https://www.googleapis.com/compute/v1/projects/gcp-mastery-1111/global/backendServices/user-account-backend-service
+  
+  
