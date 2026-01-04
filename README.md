@@ -12,7 +12,7 @@ This lab provides practical experience with GCP's Global Load Balancer, covering
 
 Follow along with our detailed video guide to complete this lab:
 
-📺 [Watch the Complete Tutorial](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+📺 [Watch the Complete Tutorial](https://www.youtube.com/watch?v=gofeXFQ7sFA)
 
 ## Getting Started
 
